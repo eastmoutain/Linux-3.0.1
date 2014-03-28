@@ -1,0 +1,18 @@
+#ifndef MESDIALOG_H
+#define MESDIALOG_H
+
+#include <qtopia/qprocess.h>
+#include "mess_dialog.h"
+//#include "gprs.h"
+class MesDialog:public QMesDialog
+{
+  Q_OBJECT
+public:
+    MesDialog(QWidget * parent = 0, const char * name = 0, WFlags f = WType_TopLevel);
+
+	
+public slots:
+    void sendbtnclicked();
+    //void ReturnToMain();
+};
+#endif

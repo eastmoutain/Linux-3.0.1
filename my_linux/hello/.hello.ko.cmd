@@ -1,0 +1,1 @@
+cmd_/home/dsh/arm11/mymodules/hello/hello.ko := arm-linux-ld -EL -r  -T /home/dsh/arm11/linux/linux-3.0.1/scripts/module-common.lds --build-id  -o /home/dsh/arm11/mymodules/hello/hello.ko /home/dsh/arm11/mymodules/hello/hello.o /home/dsh/arm11/mymodules/hello/hello.mod.o

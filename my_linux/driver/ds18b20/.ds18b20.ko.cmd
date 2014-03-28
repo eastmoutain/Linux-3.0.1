@@ -1,0 +1,1 @@
+cmd_/home/dsh/arm11/linux/my_linux/driver/ds18b20/ds18b20.ko := arm-linux-ld -EL -r  -T /home/dsh/arm11/linux/linux-3.0.1/scripts/module-common.lds --build-id  -o /home/dsh/arm11/linux/my_linux/driver/ds18b20/ds18b20.ko /home/dsh/arm11/linux/my_linux/driver/ds18b20/ds18b20.o /home/dsh/arm11/linux/my_linux/driver/ds18b20/ds18b20.mod.o

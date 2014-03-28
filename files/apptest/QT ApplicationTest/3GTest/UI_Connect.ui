@@ -1,0 +1,150 @@
+<!DOCTYPE UI><UI>
+<class>QDialup</class>
+<widget>
+    <class>QDialog</class>
+    <property stdset="1">
+        <name>name</name>
+        <cstring>QDialup</cstring>
+    </property>
+    <property stdset="1">
+        <name>geometry</name>
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>388</width>
+            <height>272</height>
+        </rect>
+    </property>
+    <property stdset="1">
+        <name>maximumSize</name>
+        <size>
+            <width>480</width>
+            <height>272</height>
+        </size>
+    </property>
+    <property stdset="1">
+        <name>caption</name>
+        <string>Diaup</string>
+    </property>
+    <widget>
+        <class>QPushButton</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>PushButton2</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>110</x>
+                <y>270</y>
+                <width>171</width>
+                <height>44</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>PushButton2</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QPushButton</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>PushButton1</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>360</x>
+                <y>270</y>
+                <width>171</width>
+                <height>44</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>PushButton1</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QMultiLineEdit</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>m_ctlMessage</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>20</x>
+                <y>40</y>
+                <width>210</width>
+                <height>180</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string></string>
+        </property>
+    </widget>
+    <widget>
+        <class>QLabel</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>TextLabel1</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>30</x>
+                <y>10</y>
+                <width>150</width>
+                <height>25</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>Connect State:</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QPushButton</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>m_ctlConnect</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>240</x>
+                <y>70</y>
+                <width>130</width>
+                <height>44</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>Connect Net</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QPushButton</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>m_ctlMinimize</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>240</x>
+                <y>140</y>
+                <width>130</width>
+                <height>44</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>Minimize</string>
+        </property>
+    </widget>
+</widget>
+</UI>

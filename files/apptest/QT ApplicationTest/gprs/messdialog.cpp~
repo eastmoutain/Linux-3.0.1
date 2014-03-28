@@ -1,0 +1,70 @@
+
+#include "messdialog.h"
+#include <qlabel.h>
+#include <qpushbutton.h>
+#include <qlayout.h>
+#include <qspinbox.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/ioctl.h>
+#include <fcntl.h>
+#include <qapplication.h>
+#include <qmessagebox.h>
+#include <qpainter.h>
+#include <qmultilineedit.h>
+#include <qtimer.h>
+#include <qtextstream.h>
+#include <qfile.h>
+#include <qlineedit.h>
+
+extern int m_fd;
+extern QString num;
+extern QString meslist[10];
+extern QString messageStr;
+extern QString witch_slected;
+MesDialog::MesDialog(QWidget * parent, const char * name, WFlags f):QMesDialog(parent, name, f)
+{
+	if(num=="")
+	{
+		send_Btn->setEnabled(false);
+		delete_Btn->setEnabled(true);
+		bool ok=false;
+		int n=witch_slected.toInt(&ok);
+		mess_LineEdit->setText(meslist[n]);
+		//QMessageBox::information(this,"gprs",messageStr);
+		//QMessageBox::information(this,"gprs",ProcessMessage(messageStr));
+	}
+	connect(send_Btn,SIGNAL(clicked()),this,SLOT(sendbtnclicked()));
+}
+
+void MesDialog::sendbtnclicked()
+{	
+	QString mess=mess_LineEdit->text()+"\x1a";
+	QString tell="AT+CMGS="+ num+"\r";
+	char getch[15];
+	if(::write(m_fd,"AT+CMGF=1\r",strlen("AT+CMGF=1\r")))
+	{
+	sleep(1);
+	//QMessageBox::information(this,"gprs","AT+CMGF=1\r",0);
+	}
+	if(::write(m_fd,tell,strlen(tell)))
+	{
+	sleep(1);
+	//QMessageBox::information(this,"gprs",tell,0);
+	}
+
+	if(::write(m_fd,mess,strlen(mess)))
+	{
+	sleep(3);
+	QMessageBox::information(this,"gprs","send message OK",0);
+	}	
+	
+	if(::read(m_fd,getch,strlen(getch)))
+	{
+	sleep(1);
+	//QMessageBox::information(this,tr(""),tr(getch));
+	}
+}
+

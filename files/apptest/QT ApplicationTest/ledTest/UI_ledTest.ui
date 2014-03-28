@@ -1,0 +1,130 @@
+<!DOCTYPE UI><UI>
+<class>TMainFormBase</class>
+<widget>
+    <class>QWidget</class>
+    <property stdset="1">
+        <name>name</name>
+        <cstring>TMainFormBase</cstring>
+    </property>
+    <property stdset="1">
+        <name>geometry</name>
+        <rect>
+            <x>14</x>
+            <y>0</y>
+            <width>420</width>
+            <height>271</height>
+        </rect>
+    </property>
+    <property stdset="1">
+        <name>maximumSize</name>
+        <size>
+            <width>420</width>
+            <height>272</height>
+        </size>
+    </property>
+    <property stdset="1">
+        <name>caption</name>
+        <string>Form1</string>
+    </property>
+    <widget>
+        <class>QCheckBox</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>CheckBox4</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>230</x>
+                <y>280</y>
+                <width>134</width>
+                <height>29</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>CheckBox4</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QCheckBox</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>m_led1</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>200</x>
+                <y>30</y>
+                <width>134</width>
+                <height>29</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>Led1</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QCheckBox</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>m_led4</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>200</x>
+                <y>190</y>
+                <width>134</width>
+                <height>29</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>Led4</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QCheckBox</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>m_led3</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>200</x>
+                <y>140</y>
+                <width>134</width>
+                <height>29</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>Led3</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QCheckBox</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>m_led2</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>200</x>
+                <y>80</y>
+                <width>134</width>
+                <height>29</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>Led2</string>
+        </property>
+    </widget>
+</widget>
+</UI>

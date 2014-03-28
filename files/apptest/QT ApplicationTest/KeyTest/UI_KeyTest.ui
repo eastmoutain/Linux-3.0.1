@@ -1,0 +1,30 @@
+<!DOCTYPE UI><UI>
+<class>QKeyForm</class>
+<widget>
+    <class>QWidget</class>
+    <property stdset="1">
+        <name>name</name>
+        <cstring>QKeyForm</cstring>
+    </property>
+    <property stdset="1">
+        <name>geometry</name>
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>416</width>
+            <height>272</height>
+        </rect>
+    </property>
+    <property stdset="1">
+        <name>maximumSize</name>
+        <size>
+            <width>420</width>
+            <height>272</height>
+        </size>
+    </property>
+    <property stdset="1">
+        <name>caption</name>
+        <string>KeyTest</string>
+    </property>
+</widget>
+</UI>

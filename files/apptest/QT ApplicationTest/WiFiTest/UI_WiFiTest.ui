@@ -1,0 +1,172 @@
+<!DOCTYPE UI><UI>
+<class>QBaseForm</class>
+<widget>
+    <class>QWidget</class>
+    <property stdset="1">
+        <name>name</name>
+        <cstring>QBaseForm</cstring>
+    </property>
+    <property stdset="1">
+        <name>geometry</name>
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>476</width>
+            <height>272</height>
+        </rect>
+    </property>
+    <property stdset="1">
+        <name>maximumSize</name>
+        <size>
+            <width>480</width>
+            <height>272</height>
+        </size>
+    </property>
+    <property stdset="1">
+        <name>caption</name>
+        <string>WiFi Setting</string>
+    </property>
+    <widget>
+        <class>QListView</class>
+        <column>
+            <property>
+                <name>text</name>
+                <string>Column 1</string>
+            </property>
+            <property>
+                <name>clickable</name>
+                <bool>true</bool>
+            </property>
+            <property>
+                <name>resizeable</name>
+                <bool>true</bool>
+            </property>
+        </column>
+    <item>
+        <property>
+            <name>text</name>
+            <string>New Item</string>
+        </property>
+        <property>
+            <name>pixmap</name>
+            <pixmap></pixmap>
+        </property>
+    </item>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>m_ListView</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>20</x>
+                <y>10</y>
+                <width>280</width>
+                <height>240</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>frameShape</name>
+            <enum>StyledPanel</enum>
+        </property>
+        <property stdset="1">
+            <name>frameShadow</name>
+            <enum>Sunken</enum>
+        </property>
+    </widget>
+    <widget>
+        <class>QPushButton</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>m_btnMinimize</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>310</x>
+                <y>180</y>
+                <width>150</width>
+                <height>44</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>Minimize</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QPushButton</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>m_btnIPInfo</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>310</x>
+                <y>120</y>
+                <width>150</width>
+                <height>44</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>IP Infor</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QPushButton</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>m_btnDisconnect</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>310</x>
+                <y>70</y>
+                <width>150</width>
+                <height>44</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>Disconnect</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QPushButton</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>m_btnScan</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>310</x>
+                <y>20</y>
+                <width>150</width>
+                <height>44</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>Scan</string>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>m_ListView</sender>
+        <signal>doubleClicked(QListViewItem*)</signal>
+        <receiver>m_ListView</receiver>
+        <slot>setFocus()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>m_btnMinimize</tabstop>
+    <tabstop>m_btnDisconnect</tabstop>
+    <tabstop>m_ListView</tabstop>
+    <tabstop>m_btnScan</tabstop>
+</tabstops>
+</UI>

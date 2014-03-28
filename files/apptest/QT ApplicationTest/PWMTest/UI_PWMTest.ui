@@ -1,0 +1,183 @@
+<!DOCTYPE UI><UI>
+<class>QUIForm</class>
+<widget>
+    <class>QWidget</class>
+    <property stdset="1">
+        <name>name</name>
+        <cstring>QUIForm</cstring>
+    </property>
+    <property stdset="1">
+        <name>geometry</name>
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>416</width>
+            <height>234</height>
+        </rect>
+    </property>
+    <property stdset="1">
+        <name>maximumSize</name>
+        <size>
+            <width>420</width>
+            <height>272</height>
+        </size>
+    </property>
+    <property stdset="1">
+        <name>caption</name>
+        <string>PWMTest</string>
+    </property>
+    <widget>
+        <class>QPushButton</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>m_startBuzzer</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>20</x>
+                <y>50</y>
+                <width>171</width>
+                <height>44</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>StartBuzzer  </string>
+        </property>
+    </widget>
+    <widget>
+        <class>QPushButton</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>m_stopBuzzer</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>20</x>
+                <y>130</y>
+                <width>171</width>
+                <height>44</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>StopBuzzer</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QSpinBox</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>Freq_SpinBox</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>240</x>
+                <y>140</y>
+                <width>81</width>
+                <height>31</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>maxValue</name>
+            <number>23000</number>
+        </property>
+        <property stdset="1">
+            <name>minValue</name>
+            <number>1</number>
+        </property>
+        <property stdset="1">
+            <name>value</name>
+            <number>1000</number>
+        </property>
+    </widget>
+    <widget>
+        <class>QSlider</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>Freq_Slider</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>340</x>
+                <y>40</y>
+                <width>40</width>
+                <height>130</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>cursor</name>
+            <cursor>0</cursor>
+        </property>
+        <property stdset="1">
+            <name>minValue</name>
+            <number>1</number>
+        </property>
+        <property stdset="1">
+            <name>maxValue</name>
+            <number>23000</number>
+        </property>
+        <property stdset="1">
+            <name>pageStep</name>
+            <number>1</number>
+        </property>
+        <property stdset="1">
+            <name>value</name>
+            <number>1000</number>
+        </property>
+        <property stdset="1">
+            <name>orientation</name>
+            <enum>Vertical</enum>
+        </property>
+        <property stdset="1">
+            <name>tickmarks</name>
+            <enum>NoMarks</enum>
+        </property>
+    </widget>
+    <widget>
+        <class>QLabel</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>TextLabel1</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>250</x>
+                <y>60</y>
+                <width>50</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>Freq</string>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>Freq_SpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>QUIForm</receiver>
+        <slot>setFreq()</slot>
+    </connection>
+    <connection>
+        <sender>Freq_Slider</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>Freq_SpinBox</receiver>
+        <slot>setValue(int)</slot>
+    </connection>
+    <connection>
+        <sender>Freq_SpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>Freq_Slider</receiver>
+        <slot>setValue(int)</slot>
+    </connection>
+    <slot access="public">setFreq()</slot>
+</connections>
+</UI>

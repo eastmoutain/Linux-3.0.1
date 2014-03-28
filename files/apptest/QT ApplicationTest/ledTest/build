@@ -1,0 +1,12 @@
+
+#cd  /root/temp/ledtest
+
+export  QMAKESPEC="/witech/arm-qtopia/qtopia2.2.0path/qtopia2.2.0/qtopia/mkspecs/qws/linux-arm-g++"
+
+source  /witech/arm-qtopia/qtopia2.2.0path/qtopia2.2.0/setQteEnv
+
+source /witech/arm-qtopia/qtopia2.2.0path/qtopia2.2.0/setQpeEnv
+
+/witech/arm-qtopia/qtopia2.2.0path/qtopia2.2.0/qtopia/bin/qmake && make 
+
+
